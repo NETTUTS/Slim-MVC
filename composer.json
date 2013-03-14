@@ -1,0 +1,14 @@
+{
+	"name": "nettuts/slim-mvc",
+	"require": {
+		"slim/slim": "*",
+		"slim/extras": "*",
+		"twig/twig": "*"
+	},
+	"autoload": {
+		"psr-0": {
+			"NetTuts": "vendor/",
+			"Controller": "./"
+		}
+	}
+}

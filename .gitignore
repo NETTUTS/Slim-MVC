@@ -1,0 +1,5 @@
+composer.lock
+vendor/composer
+vendor/slim
+vendor/twig
+vendor/autoload.php
