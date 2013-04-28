@@ -38,10 +38,10 @@ Class Router
 		$method = "any";
 		
 		if (strpos($pathStr, "@") !== false) {
-			list($pathStr, $method) = explode("@", $path);
+			list($pathStr, $method) = explode("@", $pathStr);
 		}
 
-		$func = $this->processCallback($path);
+		$func = $this->processCallback($pathStr);
 		
 		$r = new \Slim\Route($route, $func);
 		$r->setHttpMethods(strtoupper($method));
