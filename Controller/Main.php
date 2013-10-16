@@ -25,7 +25,7 @@ Class Main extends \NetTuts\Controller
 	}
 
 	
-	public function notFound()
+	public function notFound($callable = NULL)
 	{
 		$this->render("error", array(), 404);
 	}
